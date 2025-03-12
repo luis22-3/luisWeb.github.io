@@ -1,0 +1,36 @@
+:root {  
+    --primary: #ff4500;  
+    --secondary: #1a1a1a;  
+    --light: #f4f4f4;  
+    --dark: #333;  
+    --success: #28a745;  
+}  
+
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}  
+
+body {  
+    background-color: var(--light);  
+    color: var(--dark);  
+    line-height: 1.6;  
+}  
+
+a {  
+    text-decoration: none;  
+    color: inherit;  
+}  
+
+button {  
+    cursor: pointer;  
+    border: none;  
+    outline: none;  
+}  
+
+input, select, textarea {  
+    font-family: inherit;  
+    font-size: inherit;  
+}

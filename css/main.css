@@ -1,0 +1,283 @@
+/* Header y Navegación */  
+header {  
+    background: linear-gradient(to right, var(--secondary), var(--primary));  
+    padding: 1rem 0;  
+    color: white;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+    position: sticky;  
+    top: 0;  
+    z-index: 100;  
+}  
+
+nav {  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 0 1.5rem;  
+}  
+
+.logo {  
+    font-size: 1.8rem;  
+    font-weight: bold;  
+    display: flex;  
+    align-items: center;  
+}  
+
+.logo span {  
+    color: var(--primary);  
+}  
+
+.nav-links {  
+    display: flex;  
+    list-style: none;  
+}  
+
+.nav-links li {  
+    margin-left: 1.5rem;  
+}  
+
+.nav-links a {  
+    color: white;  
+    font-weight: 500;  
+    transition: color 0.3s;  
+}  
+
+.nav-links a:hover {  
+    color: var(--primary);  
+}  
+
+/* Hero Section */  
+.hero {  
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/hero-bg.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    height: 80vh;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    text-align: center;  
+    color: white;  
+}  
+
+.hero-content {  
+    max-width: 800px;  
+    padding: 0 1.5rem;  
+}  
+
+.hero h1 {  
+    font-size: 3rem;  
+    margin-bottom: 1rem;  
+}  
+
+.hero p {  
+    font-size: 1.2rem;  
+    margin-bottom: 2rem;  
+}  
+
+/* Botones */  
+.btn {  
+    display: inline-block;  
+    padding: 0.8rem 1.5rem;  
+    background-color: var(--primary);  
+    color: white;  
+    border-radius: 4px;  
+    font-weight: bold;  
+    transition: background-color 0.3s;  
+}  
+
+.btn:hover {  
+    background-color: #e03d00;  
+}  
+
+/* Login */  
+.login-container {  
+    max-width: 400px;  
+    margin: 5rem auto;  
+    padding: 2rem;  
+}  
+
+.login-box {  
+    background-color: white;  
+    padding: 2rem;  
+    border-radius: 8px;  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  
+}  
+
+.login-box h2 {  
+    text-align: center;  
+    margin-bottom: 1.5rem;  
+    color: var(--secondary);  
+}  
+
+.form-group {  
+    margin-bottom: 1.5rem;  
+}  
+
+.form-group label {  
+    display: block;  
+    margin-bottom: 0.5rem;  
+    color: var(--dark);  
+}  
+
+.form-group input {  
+    width: 100%;  
+    padding: 0.8rem;  
+    border: 1px solid #ddd;  
+    border-radius: 4px;  
+}  
+
+.error-message {  
+    color: #dc3545;  
+    text-align: center;  
+    margin-top: 1rem;  
+}  
+
+/* Dashboard */  
+.dashboard-container {  
+    max-width: 1200px;  
+    margin: 2rem auto;  
+    padding: 1.5rem;  
+}  
+
+.admin-section, .user-section {  
+    background-color: white;  
+    border-radius: 8px;  
+    padding: 2rem;  
+    margin-bottom: 2rem;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+}  
+
+.admin-controls {  
+    display: flex;  
+    gap: 1rem;  
+    margin-bottom: 2rem;  
+}  
+
+/* Planificador de Rutinas */  
+.goal-selector {  
+    display: flex;  
+    justify-content: center;  
+    gap: 1rem;  
+    margin-bottom: 2rem;  
+}  
+
+.goal-btn {  
+    padding: 0.8rem 1.5rem;  
+    background-color: var(--light);  
+    border: 2px solid var(--dark);  
+    color: var(--dark);  
+    border-radius: 4px;  
+    font-weight: bold;  
+    transition: all 0.3s;  
+}  
+
+.goal-btn.active {  
+    background-color: var(--primary);  
+    border-color: var(--primary);  
+    color: white;  
+}  
+
+.workout-days {  
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 1rem;  
+    margin-bottom: 2rem;  
+}  
+
+.day-tab {  
+    padding: 0.5rem 1rem;  
+    background-color: var(--light);  
+    border-radius: 4px;  
+    transition: all 0.3s;  
+}  
+
+.day-tab.active {  
+    background-color: var(--secondary);  
+    color: white;  
+}  
+
+/* Ejercicios */  
+.exercise {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 1rem;  
+    border-bottom: 1px solid #ddd;  
+}  
+
+.exercise-info h4 {  
+    margin-bottom: 0.5rem;  
+}  
+
+.exercise-actions {  
+    display: flex;  
+    gap: 0.5rem;  
+}  
+
+/* Modal */  
+.modal {  
+    display: none;  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    background-color: rgba(0, 0, 0, 0.7);  
+    z-index: 1000;  
+    justify-content: center;  
+    align-items: center;  
+}  
+
+.modal-content {  
+    background-color: white;  
+    width: 90%;  
+    max-width: 600px;  
+    border-radius: 8px;  
+    overflow: hidden;  
+}  
+
+.modal-header {  
+    background-color: var(--primary);  
+    color: white;  
+    padding: 1rem;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+
+.close-modal {  
+    background: none;  
+    color: white;  
+    font-size: 1.5rem;  
+    cursor: pointer;  
+}  
+
+.modal-body {  
+    padding: 2rem;  
+}  
+
+/* Footer */  
+footer {  
+    background-color: var(--secondary);  
+    color: white;  
+    padding: 3rem 0 1rem;  
+    margin-top: 4rem;  
+}  
+
+.footer-container {  
+    max-width: 1200px;  
+    margin: 0 auto;  
+    padding: 0 1.5rem;  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    gap: 2rem;  
+}  
+
+.copyright {  
+    text-align: center;  
+    margin-top: 2rem;  
+    padding-top: 1rem;  
+    border-top: 1px solid rgba(255, 255, 255, 0.1);  
+}

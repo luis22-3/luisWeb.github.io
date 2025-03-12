@@ -1,0 +1,83 @@
+@media (max-width: 768px) {  
+    /* Header */  
+    nav {  
+        flex-direction: column;  
+        padding: 1rem;  
+    }  
+
+    .nav-links {  
+        display: none;  
+        width: 100%;  
+        flex-direction: column;  
+        text-align: center;  
+        margin-top: 1rem;  
+    }  
+
+    .nav-links.active {  
+        display: flex;  
+    }  
+
+    .nav-links li {  
+        margin: 0.5rem 0;  
+    }  
+
+    .hamburger-btn {  
+        display: block;  
+        position: absolute;  
+        right: 1rem;  
+        top: 1rem;  
+        background: none;  
+        border: none;  
+        color: white;  
+        font-size: 2rem;  
+    }  
+
+    /* Hero */  
+    .hero h1 {  
+        font-size: 2rem;  
+    }  
+
+    .hero p {  
+        font-size: 1rem;  
+    }  
+
+    /* Login */  
+    .login-container {  
+        margin: 2rem auto;  
+        padding: 1rem;  
+    }  
+
+    /* Dashboard */  
+    .admin-controls {  
+        flex-direction: column;  
+    }  
+
+    .goal-selector {  
+        flex-direction: column;  
+    }  
+
+    .workout-days {  
+        flex-direction: column;  
+    }  
+
+    .exercise {  
+        flex-direction: column;  
+        text-align: center;  
+    }  
+
+    .exercise-actions {  
+        margin-top: 1rem;  
+    }  
+
+    /* Modal */  
+    .modal-content {  
+        width: 95%;  
+        margin: 1rem;  
+    }  
+}  
+
+@media (min-width: 769px) {  
+    .hamburger-btn {  
+        display: none;  
+    }  
+}
